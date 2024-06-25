@@ -1,0 +1,156 @@
+.navbar-nav .nav-link {
+  color: #000000 !important; /* Warna putih untuk teks navbar */
+}
+.hotel-booking {
+  padding: 20px;
+}
+
+.progress-tracker {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 8rem;
+  position: relative;
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.step::before,
+.step::after {
+  content: "";
+  position: absolute;
+  top: 15px; /* Sesuaikan nilai ini agar sejajar dengan step-number */
+  width: 50%; /* Panjang garis, disesuaikan untuk masing-masing setengah */
+  height: 2px; /* Ketebalan garis */
+  background-color: #ddd;
+}
+
+.step::before {
+  left: 0;
+}
+
+.step::after {
+  right: 0;
+}
+
+.step:first-child::before {
+  display: none; /* Hapus garis kiri dari langkah pertama */
+}
+
+.step:last-child::after {
+  display: none; /* Hapus garis kanan dari langkah terakhir */
+}
+
+.step.done::before,
+.step.done::after {
+  background-color: #053b74; /* Warna untuk garis yang sudah selesai */
+}
+
+.step .step-number {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1; /* Pastikan step-number di atas garis */
+}
+
+.step .step-title {
+  display: block;
+  font-size: 14px;
+}
+
+.step.done .step-number {
+  background-color: #053b74; /* Warna untuk langkah yang sudah selesai */
+  color: white;
+}
+
+.konfirmasipemesanan {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.header p {
+  font-size: 14px;
+  color: #666;
+}
+
+.order-details,
+.customer-information,
+.additional-information {
+  margin: 20px 0;
+}
+
+.order-details h2,
+.customer-information h2,
+.additional-information h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  width: 30%; /* Menentukan lebar kolom th */
+}
+
+td {
+  width: 70%; /* Menentukan lebar kolom td */
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.btn-download {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #053b74;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+}

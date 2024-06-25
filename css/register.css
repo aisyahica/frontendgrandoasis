@@ -1,0 +1,121 @@
+.navbar-nav .nav-link {
+  color: #000000 !important; /* Warna putih untuk teks navbar */
+}
+
+.register-form {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Menggunakan alpha channel untuk transparansi */
+  padding: 20px;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.register-form h2 {
+  margin-top: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.register-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.register-form input[type="text"],
+.register-form input[type="password"] {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.register-form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.register-form button[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: #053b74;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.register-form button[type="submit"]:hover {
+  background-color: #d3d3d3;
+}
+
+.form-check p {
+  font-size: 14px;
+  text-align: justify;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-control {
+  width: 100%;
+  padding-right: 40px; /* Make space for the eye icon */
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 75%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.btn-primary:active {
+  background-color: #021f45 !important; /* Warna saat tombol ditekan */
+  color: #fff;
+  border: none;
+}
+.btn-secondary {
+  background-color: #ffffff;
+  color: #053b74;
+  width: 100%;
+  height: 40px;
+}
+/*** Section Title ***/
+.section-title {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  position: relative;
+  padding: 0 10px;
+}
+
+.section-title::before,
+.section-title::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background: #053b74;
+}
+
+.section-title::before {
+  margin-right: 10px;
+}
+
+.section-title::after {
+  margin-left: 10px;
+}
+
+.policy .policy-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.policy .policy-link:hover {
+  text-decoration: underline;
+}
